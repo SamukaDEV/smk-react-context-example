@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import AppContext from '.';
 const ContextProvider = ({ children }) => {
-  const [example, setExample] = useState('Hello there');
+  const [example, setExample] = useState('Default value');
   const context = {
     setExample,
     example
