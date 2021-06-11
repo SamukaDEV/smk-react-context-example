@@ -4,9 +4,6 @@ import AppContext from './context';
 import Widget from './Widget';
 import StyleTheme from './styles';
 
-// segura as pontas
-// nova linha
-
 const App = () => {
   const { example, setExample, theme, setTheme } = useContext(AppContext);
   const [formText, setFormText] = useState('');
