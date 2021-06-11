@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import './style.css';
 import AppContext from './context';
-import Widget from './Widget';
+import Card from './Widget';
 import StyleTheme from './styles';
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
         <div htmlFor="example" style={{ fontSize: 30, ...theme.text }}>
           Theme Manager
         </div>
-        <div>
+        <div style={{ display: 'flex', marginBottom: 10 }}>
           <input
             type="text"
             placeholder="Type here..."
@@ -53,8 +53,9 @@ const App = () => {
         Theme: {theme.name}
       </div>
       <div style={{ marginTop: 10 }}>
-        <Widget />
-        <Widget />
+        <Card enabled={true} />
+        <Card enabled={false} />
+        <Card enabled={true} />
       </div>
     </div>
   );
