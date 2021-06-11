@@ -28,7 +28,11 @@ const App = () => {
       <div>{theme.toUpperCase()}</div>
       <button
         onClick={() => {
-          setTheme('dark');
+          if (theme == 'light') {
+            setTheme('dark');
+          } else {
+            setTheme('light');
+          }
         }}
       >
         Set Theme Dark
