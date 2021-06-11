@@ -4,9 +4,8 @@ import AppContext from './context';
 export default function Widget() {
   const { example, setExample, theme } = useContext(AppContext);
   return (
-    <div style={{ color: 'green', marginBottom: 12 }}>
-      /* comment: {example} */
-      <div>{JSON.stringify(theme)}</div>
+    <div className="card" style={theme.card}>
+      {example}
     </div>
   );
 }
