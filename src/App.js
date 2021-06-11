@@ -21,7 +21,7 @@ const App = () => {
   };
 
   return (
-    <div className="App" style={theme.container}>
+    <div className="App container" style={theme.container}>
       <form onSubmit={handleSubmit}>
         <label htmlFor="example">Example: </label>
         <input type="text" value={formText} onChange={handleChange} />

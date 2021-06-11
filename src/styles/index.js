@@ -2,14 +2,14 @@ const StyleTheme = {
   light: {
     button: {},
     container: {
-      backgroundColor: 'darkgray',
-      margin: 0,
-      padding: 15
+      backgroundColor: '#C3E0E5'
     }
   },
   dark: {
     button: {},
-    container: {}
+    container: {
+      backgroundColor: '#274472'
+    }
   }
 };
 export default StyleTheme;
