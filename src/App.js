@@ -50,7 +50,7 @@ const App = () => {
         Toggle Theme
       </button>
       <div style={{ position: 'absolute', top: 10, right: 10, ...theme.text }}>
-        {theme.name}
+        Theme: {theme.name}
       </div>
       <div style={{ marginTop: 10 }}>
         <Widget />

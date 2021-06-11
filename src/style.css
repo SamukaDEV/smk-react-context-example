@@ -17,6 +17,7 @@ p {
 
 input {
   outline: none;
+  width: 100;
 }
 input[type='text'] {
   padding: 5px;
