@@ -24,7 +24,7 @@ input[type='text'] {
 }
 
 button {
-  border: 1px solid rgb(161, 161, 161);
+  border: 1px solid transparent;
   border-radius: 3px;
   padding: 5px;
   background: lightgray;

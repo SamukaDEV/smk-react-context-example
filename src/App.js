@@ -32,10 +32,11 @@ const App = () => {
             onChange={handleChange}
           />
         </div>
-        <button>DO IT</button>
+        {/* <button>DO IT</button> */}
       </form>
       {/* <div>{JSON.stringify(theme)}</div> */}
       <button
+        style={theme.button}
         onClick={() => {
           if (StyleTheme.light === theme) {
             setTheme(StyleTheme.dark);
@@ -47,7 +48,6 @@ const App = () => {
         Toggle Theme
       </button>
       <div style={{ marginTop: 10 }}>
-        <Widget />
         <Widget />
         <Widget />
       </div>
