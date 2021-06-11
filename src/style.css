@@ -15,10 +15,11 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  /* background: #41729f; */
+  background: #5885af;
   justify-items: center;
 }
 .container {
+  position: relative;
   padding: 15px;
   background-color: rgb(243, 243, 243);
   height: calc(100vh - 30px);
