@@ -47,6 +47,9 @@ const App = () => {
       >
         Toggle Theme
       </button>
+      <div style={{ position: 'absolute', top: 10, right: 10 }}>
+        {theme.name}
+      </div>
       <div style={{ marginTop: 10 }}>
         <Widget />
         <Widget />

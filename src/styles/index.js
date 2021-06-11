@@ -1,5 +1,6 @@
 const StyleTheme = {
   light: {
+    name: 'Light',
     button: {
       backgroundColor: '#41729F',
       color: 'white'
@@ -12,6 +13,7 @@ const StyleTheme = {
     }
   },
   dark: {
+    name: 'Dark',
     button: {
       backgroundColor: '#C3E0E5',
       color: '#41729F'
