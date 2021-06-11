@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import StyleTheme from '../styles';
+
 import AppContext from '.';
 const ContextProvider = ({ children }) => {
   const [example, setExample] = useState('Default value');
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(StyleTheme.light);
   const context = {
     setExample,
     example,

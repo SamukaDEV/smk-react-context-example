@@ -2,6 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import './style.css';
 import AppContext from './context';
 import Widget from './Widget';
+import StyleTheme from './styles';
+
 const App = () => {
   const { example, setExample, theme, setTheme } = useContext(AppContext);
   const [formText, setFormText] = useState('');
@@ -19,24 +21,14 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="App" style={theme.container}>
       <form onSubmit={handleSubmit}>
         <label htmlFor="example">Example: </label>
         <input type="text" value={formText} onChange={handleChange} />
         <button>DO IT</button>
       </form>
-      <div>{theme.toUpperCase()}</div>
-      <button
-        onClick={() => {
-          if (theme == 'light') {
-            setTheme('dark');
-          } else {
-            setTheme('light');
-          }
-        }}
-      >
-        Set Theme Dark
-      </button>
+      <div>{JSON.stringify(theme)}</div>
+      <button onClick={() => {}}>Toggle Theme</button>
       <Widget />
       <Widget />
       <Widget />
