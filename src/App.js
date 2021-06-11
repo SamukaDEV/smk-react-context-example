@@ -23,7 +23,9 @@ const App = () => {
   return (
     <div className="App container" style={theme.container}>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="example">Widget Content</label>
+        <div htmlFor="example" style={{ fontSize: 30, ...theme.text }}>
+          Theme Manager
+        </div>
         <div>
           <input
             type="text"
