@@ -3,14 +3,27 @@
 * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#root {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+}
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* background: #41729f; */
+  justify-items: center;
 }
 .container {
   padding: 15px;
   background-color: rgb(243, 243, 243);
   height: calc(100vh - 30px);
+  max-width: 600px;
+  min-width: 400px;
 }
 h1,
 p {

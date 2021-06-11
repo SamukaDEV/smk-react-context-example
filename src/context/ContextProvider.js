@@ -4,7 +4,7 @@ import StyleTheme from '../styles';
 import AppContext from '.';
 const ContextProvider = ({ children }) => {
   const [example, setExample] = useState(
-    'Command Block, is the best item from the game!'
+    'This text is shared with all the application'
   );
   const [theme, setTheme] = useState(StyleTheme.light);
   const context = {
