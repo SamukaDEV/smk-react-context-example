@@ -1,5 +1,6 @@
 const StyleTheme = {
   light: {
+    fill: '',
     name: 'Light',
     button: {
       backgroundColor: '#41729F',
@@ -13,6 +14,7 @@ const StyleTheme = {
     }
   },
   dark: {
+    fill: '-fill',
     name: 'Dark',
     button: {
       backgroundColor: '#C3E0E5',

@@ -45,4 +45,5 @@ button:active {
   margin-bottom: 10px;
   border-radius: 4px;
   word-wrap: break-word;
+  display: flex;
 }
