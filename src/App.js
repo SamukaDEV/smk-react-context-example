@@ -25,7 +25,7 @@ const App = () => {
         <input type="text" value={formText} onChange={handleChange} />
         <button>DO IT</button>
       </form>
-      <div>{theme}</div>
+      <div>{theme.toUpperCase()}</div>
       <button
         onClick={() => {
           setTheme('dark');

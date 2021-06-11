@@ -6,7 +6,7 @@ export default function Widget() {
   return (
     <div style={{ color: 'green', marginBottom: 12 }}>
       /* comment: {example} */
-      <div>{theme}</div>
+      <div>{theme.toUpperCase()}</div>
     </div>
   );
 }
