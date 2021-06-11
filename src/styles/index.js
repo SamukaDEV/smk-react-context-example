@@ -24,6 +24,9 @@ const StyleTheme = {
     card: {
       backgroundColor: '#41729F',
       color: '#C3E0E5'
+    },
+    text: {
+      color: 'white'
     }
   }
 };
