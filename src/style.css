@@ -14,3 +14,23 @@ h1,
 p {
   font-family: Lato;
 }
+
+input {
+  outline: none;
+}
+input[type='text'] {
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+button {
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 3px;
+  padding: 5px;
+  background: lightgray;
+  cursor: pointer;
+}
+
+button:active {
+  background: rgb(177, 177, 177);
+}
