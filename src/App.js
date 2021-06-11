@@ -3,7 +3,7 @@ import './style.css';
 import AppContext from './context';
 import Widget from './Widget';
 const App = () => {
-  const { example, setExample } = useContext(AppContext);
+  const { example, setExample, theme, setTheme } = useContext(AppContext);
   const [formText, setFormText] = useState('');
   useEffect(() => {
     console.log('context here: ', example);
@@ -25,6 +25,14 @@ const App = () => {
         <input type="text" value={formText} onChange={handleChange} />
         <button>DO IT</button>
       </form>
+      <div>{theme}</div>
+      <button
+        onClick={() => {
+          setTheme('dark');
+        }}
+      >
+        Set Theme Dark
+      </button>
       <Widget />
       <Widget />
       <Widget />
